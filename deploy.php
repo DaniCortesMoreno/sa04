@@ -7,9 +7,9 @@ require 'recipe/laravel.php';
 
 set('repository', 'https://github.com/DaniCortesMoreno/sa04.git');
 
-add('shared_files', []);
-add('shared_dirs', []);
-add('writable_dirs', []);
+add('shared_files', ['.env']);
+add('shared_dirs', ['storage']);
+add('writable_dirs', ['storage', 'bootstrap/cache']);
 
 // Hosts
 
